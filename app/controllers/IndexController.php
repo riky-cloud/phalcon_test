@@ -12,7 +12,9 @@ class IndexController extends ControllerBase
 
     public function dataAction()
     {
-        echo Tbl_todo::testget();
+        $data = Tbl_todo::testget();
+
+        print_r($data);
     }
 
 }

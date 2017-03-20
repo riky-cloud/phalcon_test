@@ -12,8 +12,9 @@ class Tbl_todo extends Model
 	{
 		$q = "select * from tbl_todo";
 		$query = $this->modelsManager->executeQuery($q);
-		return Tbl_todo::find();
 		return $query;
+
+		// return Tbl_todo::find();
 	}
 
 	public static function isi()
